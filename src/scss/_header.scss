@@ -64,4 +64,13 @@ header{
             color: #F04264;
         }
     }
+    @include responsive(600px){
+        .container{
+            .main-header{
+                .more, .redes-sociais{
+                    display: none;
+                }
+            }
+        }
+    }
 }

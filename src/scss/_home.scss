@@ -98,6 +98,82 @@
                 #mao{
                     bottom: -67.5rem;
                 }
+                #bolas{
+                    top: 3rem;
+                    right: 3rem;
+                }
+            }
+        }
+    }
+    @include responsive(1100px){
+        padding: 20rem 0rem 90rem 0rem;
+        .container{
+            .main-hero{
+                flex-direction: column;
+                .text{
+                    align-items: center;
+                    max-width: 100%;
+                    text-align: center;
+                    .text-primary{
+                        h1{
+                            font-size: 5rem;
+                        }
+                    }
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+                .img{
+                    margin-top: 5rem;
+                    justify-content: center;
+                    #bolas{
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(600px){
+        padding: 10rem 0rem 60rem 0rem;
+        .container{
+            .main-hero{
+                .text{
+                    .text-primary{
+                        h1{
+                            font-size: 4rem;
+                        }
+                    }
+                    p{
+                        font-size: 1.3rem;
+                    }
+                    form{
+                        .input-button{
+                            padding: 1rem 1rem 1rem 2rem;
+                            input{
+                                
+                            }
+                            button{
+                                padding: 1rem 1rem;
+                            }
+                        }
+                    }
+                    .empresas{
+                        img{
+                            &:not(:first-child){
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+                .img{
+                    img{
+                        max-width: 30rem;
+                    }
+                    #mao{
+                        bottom: -38.8rem;
+                        max-width: 25rem;
+                    }
+                }
             }
         }
     }
@@ -132,6 +208,28 @@
                     font-size: 1.6rem;
                     line-height: 160%;
                     color: #606272;
+                }
+            }
+        }
+    }
+    @include responsive(1100px){
+        .container{
+            .main-card{
+                flex-direction: column;
+                .card{
+                    width: 56rem;
+                    &:not(:first-child){
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(600px){
+        .container{
+            .main-card{
+                .card{
+                    width: 30rem;
                 }
             }
         }
