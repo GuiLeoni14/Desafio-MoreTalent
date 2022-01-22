@@ -1,1 +1,1 @@
-"use strict";
+"use strict";AOS.init({once:!0,duration:1e3,disable:"mobile"});
