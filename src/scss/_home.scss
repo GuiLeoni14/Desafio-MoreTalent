@@ -14,10 +14,26 @@
                 .text-primary{
                     position: relative;
                     h1{
+                        position: relative;
                         font-weight: 600;
                         font-size: 6.4rem;
                         line-height: 7.7rem;
                         letter-spacing: -0.01em;
+                        z-index: 2;
+                        &::after{
+                            z-index: -1;
+                            position: absolute;
+                            content: '';
+                            width: 100%;
+                            max-width: 78%;
+                            bottom: 1.5rem;
+                            display: block;
+                            height: 0.8rem;
+                            background-color: #ffd000;
+                            @include responsive(1100px){
+                                display: none;
+                            }
+                        }
                     }
                     img{
                         position: absolute;
