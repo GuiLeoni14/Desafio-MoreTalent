@@ -1,0 +1,139 @@
+.s-hero{
+    padding: 20rem 0rem 25rem 0rem;
+    background-color: #eff1f3;
+    .container{
+        .main-hero{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .text{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 55.5rem;
+                .text-primary{
+                    position: relative;
+                    h1{
+                        font-weight: 600;
+                        font-size: 6.4rem;
+                        line-height: 7.7rem;
+                        letter-spacing: -0.01em;
+                    }
+                    img{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                p{
+                    margin: 2.6rem 0rem 4rem 0rem;
+                    font-weight: normal;
+                    font-size: 1.8rem;
+                    line-height: 160%;
+                    color: #606272;
+                    span{
+                        color: #606272;
+                        font-weight: 600;
+                    }
+                }
+                form{
+                    .input-button{
+                        width: 100%;
+                        max-width: 52rem;
+                        height: 6.9rem;
+                        border-radius: 12.2rem;
+                        padding: 1rem 1.5rem 1rem 3.4rem ;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: #FDFDFD;
+                        box-shadow: 0px 15px 30px -10px rgba(204, 206, 219, 0.4);
+                        input{
+                            border: none;
+                            outline: none;
+                            background: none;
+                        }
+                        button{
+                            cursor: pointer;
+                            background-color: $gray-100;
+                            padding: 1.5rem 2.8rem;
+                            color: #FFF;
+                            border-radius: 9.7rem;
+                        }
+                    }
+                }
+                .empresas{
+                    margin: 5.6rem 0rem;
+                    display: flex;
+                    img{
+                        &:not(:first-child){
+                            margin-left: 3rem;
+                        }
+                    }
+                }
+                .person{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        &:nth-child(2){
+                            margin: 0rem 0.6rem 0rem 1.3rem;
+                        }
+                    }
+                    h6{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
+                        color: #666671
+                    }
+                }
+            }
+            .img{
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    position: absolute;
+                }
+                #mao{
+                    bottom: -67.5rem;
+                }
+            }
+        }
+    }
+}
+
+.s-cards{
+    padding-bottom: 10rem;
+    .container{
+        .main-card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -12rem;
+            .card{
+                padding: 4.8rem 5.4rem 4rem 4rem;
+                width: 38.4rem;
+                height: 21.6rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #FDFDFD;
+                box-shadow: 0px 24px 44px -11px rgba(181, 183, 192, 0.3);
+                border-radius: 1.2rem;
+                h6{
+                    margin: 2.9rem 0rem 0.3rem 0rem;
+                    font-weight: 600;
+                    font-size: 2.2rem;
+                    line-height: 150%;
+                }
+                span{
+                    font-size: 1.6rem;
+                    line-height: 160%;
+                    color: #606272;
+                }
+            }
+        }
+    }
+}
